@@ -770,7 +770,7 @@ header.main-header .header-sticky.active{
 
 .hero.hero-bg-image{
 	position: relative;
-	background: url('../images/hero-bg-image.jpg') no-repeat;
+	background: url('../images/elderly7.jpg') no-repeat;
 	background-position: center center;
 	background-size: cover;
 	min-height: 100vh;
@@ -1551,7 +1551,7 @@ header.main-header .header-sticky.active{
 
 .how-it-work{
 	position: relative;
-	background: url('../images/how-it-work-bg.jpg') no-repeat;
+	background: url('../images/elderly1.jpg') no-repeat;
 	background-position: center center;
 	background-size: cover;
 	padding: 100px 0;
@@ -2861,7 +2861,7 @@ header.main-header .header-sticky.active{
 
 .page-header{
 	position: relative;
-	background: var(--accent-color) url('../images/page-header-bg.png') no-repeat;
+	background: var(--primary-color) url('../images') no-repeat;
 	background-position: top center;
 	background-size: 100% auto;
 	padding: 145px 0;
