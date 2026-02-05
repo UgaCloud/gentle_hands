@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="zxx">
 <head>
 	<!-- Meta -->
@@ -12,27 +13,29 @@
     <!-- Page Title -->
     <title>Gentle Hands Home Care | Compassionate In-Home Senior Care Services</title>
 	<!-- Favicon Icon -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'images/logo.png' %}">
 	<!-- Google Fonts Css-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 	<!-- Bootstrap Css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
 	<!-- SlickNav Css -->
-	<link href="css/slicknav.min.css" rel="stylesheet">
+	<link href="{% static 'css/slicknav.min.css' %}" rel="stylesheet">
 	<!-- Swiper Css -->
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
 	<!-- Font Awesome Icon Css-->
-	<link href="css/all.min.css" rel="stylesheet" media="screen">
+	<link href="{% static 'css/all.min.css' %}" rel="stylesheet" media="screen">
 	<!-- Animated Css -->
-	<link href="css/animate.css" rel="stylesheet">
+	<link href="{% static 'css/animate.css' %}" rel="stylesheet">
     <!-- Magnific Popup Core Css File -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
 	<!-- Mouse Cursor Css File -->
-	<link rel="stylesheet" href="css/mousecursor.css">
+	<link rel="stylesheet" href="{% static 'css/mousecursor.css' %}">
 	<!-- Main Custom Css -->
-	<link href="css/custom.css" rel="stylesheet" media="screen">
+	<link href="{% static 'css/custom.css' %}" rel="stylesheet" media="screen">
 </head>
 <body>
 
@@ -40,7 +43,7 @@
 	<div class="preloader">
 		<div class="loading-container">
 			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/logo.png" alt=""></div>
+			<div id="loading-icon"><img src="{% static 'images/logo.png' %}" alt=""></div>
 		</div>
 	</div>
 	<!-- Preloader End -->
@@ -52,7 +55,7 @@
 				<div class="container-fluid">
 					<!-- Logo Start -->
 					<a class="navbar-brand" href="index.html">
-						<img src="images/logo.png" alt="Logo" style="width: 80px; height: 80px;">
+						<img src="{% static 'images/logo.png' %}" alt="Logo" style="width: 80px; height: 80px;">
 					</a>
 					<!-- Logo End -->
 
@@ -60,15 +63,15 @@
 					<div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a>
                                     <!-- <ul>
                                         <li class="nav-item"><a class="nav-link" href="index.html">Home - Main</a></li>
                                         <li class="nav-item"><a class="nav-link" href="index.html">Home - Image</a></li>
                                         <li class="nav-item"><a class="nav-link" href="index-video.html">Home - Video</a></li>
                                     </ul> -->
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a>
-                                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About Us</a>
+                                <li class="nav-item"><a class="nav-link" href="{% url 'services' %}">Services</a></li>
                                 <!-- <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> -->
                                 <!-- <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
                                     <ul>
@@ -86,7 +89,7 @@
                                         <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
                                     </ul>
                                 </li> -->
-                                <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li> -->
+                                <!-- <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li> -->
                                 <li class="nav-item highlighted-menu"><a class="nav-link" href="#">book appointment</a></li>
                             </ul>
                         </div>
@@ -127,7 +130,7 @@
                             <div class="hero-body">
                                 <!-- Hero Button Start -->
                                 <div class="hero-btn wow fadeInUp" data-wow-delay="0.2s">
-                                    <a href="book-appointment.html" class="btn-default btn-highlighted">Schedule a Free Care Assessment</a>
+                                    <a href="#" class="btn-default btn-highlighted">Schedule a Free Care Assessment</a>
                                 </div>
                                 <!-- Hero Button End -->
 
@@ -137,12 +140,12 @@
                                     <div class="review-images">
                                         <div class="review-image">
                                             <figure class="image-anime reveal">
-                                                <img src="images/author-1.jpg" alt="">
+                                                <img src="{% static 'images/author-1.jpg' %}" alt="">
                                             </figure>
                                         </div>
                                         <div class="review-image">
                                             <figure class="image-anime reveal">
-                                                <img src="images/author-2.jpg" alt="">
+                                                <img src="{% static 'images/author-2.jpg' %}" alt="">
                                             </figure>
                                         </div>
                                         <div class="review-image add-more">
@@ -177,7 +180,7 @@
                     <div class="col-lg-3">
                         <!-- Hero Content Circle Start -->
                         <div class="hero-content-circle">
-                            <a href="book-appointment.html" class="book-appointment-circle"><img src="images/book-appointment-circle-2.svg" alt=""></a>
+                            <a href="#" class="book-appointment-circle"><img src="{% static 'images/book-appointment-circle-2.svg' %}" alt=""></a>
                         </div>
                         <!-- Hero Content Circle End -->
                     </div>
@@ -197,7 +200,7 @@
                         <!-- About Us Image Start -->
                         <div class="about-image-1">
                             <figure class="image-anime reveal">
-                                <img src="images/logo.png" alt="">
+                                <img src="{% static 'images/logo.png' %}" alt="">
                             </figure>
                         </div>
                         <!-- About Us Image End -->
@@ -205,7 +208,7 @@
                         <!-- About Us Image Start -->
                         <div class="about-image-2">
                             <figure class="image-anime reveal">
-                                <img src="images/elder1.png" alt="">
+                                <img src="{% static 'images/elder1.png' %}" alt="">
                             </figure>
                         </div>
                         <!-- About Us Image End -->
@@ -226,8 +229,8 @@
                         <!-- About Us Body Start -->
                         <div class="about-us-body">
                             <div class="about-us-circle">
-                                <a href="about.html">
-                                    <img src="images/about-us-circle.svg" alt="Learn More About Our Story">
+                                <a href="{url 'about'}">
+                                    <img src="{% static 'images/about-us-circle.svg' %}" alt="Learn More About Our Story">
                                 </a>
                             </div>
                             <div class="about-body-content wow fadeInUp" data-wow-delay="0.2s">
@@ -270,7 +273,7 @@
                 <div class="col-lg-6">
                     <!-- Section Button Start -->
                     <div class="section-btn wow fadeInUp" data-wow-delay="0.2s">
-                        <a href="services.html" class="btn-default">View All Services</a>
+                        <a href="{% url 'services' %}" class="btn-default">View All Services</a>
                     </div>
                     <!-- Section Button End -->
                 </div>
@@ -282,7 +285,7 @@
                     <div class="service-item active wow fadeInUp">
                         <!-- Service Image Start -->
                         <div class="service-image">
-                            <img src="images/service-1.jpg" alt="">
+                            <img src="{% static 'images/elder1.png' %}" alt="">
                         </div>
                         <!-- Service Image End -->
 
@@ -290,20 +293,20 @@
                         <div class="service-body">
                             <!-- Icon Box Start -->
                             <div class="icon-box">
-                                <img src="images/icon-service-1.svg" alt="">  
+                                <img src="{% static 'images/icon-service-1.svg' %}" alt="">  
                             </div>
                             <!-- Icon Box End -->
                             
                             <!-- Service Content Start -->
                             <div class="service-content">
-                                <h3><a href="service-single.html">Personal Care Assistance</a></h3>
+                                <h3><a href="#">Personal Care Assistance</a></h3>
                                 <p>Help with Activities of Daily Living (ADLs) including dressing, grooming, oral hygiene, toileting, and mobility support. We provide dignified assistance with respect for personal privacy and independence.</p>
                             </div>
                             <!-- Service Content End -->
                             
                             <!-- Service Readmore Button Start -->
                             <div class="service-readmore-btn">
-                                <a href="service-single.html" class="readmore-btn">Learn more</a>
+                                <a href="#" class="readmore-btn">Learn more</a>
                             </div>
                             <!-- Service Readmore Button End -->
                         </div>
@@ -317,7 +320,7 @@
                     <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
                         <!-- Service Image Start -->
                         <div class="service-image">
-                            <img src="images/service-1.jpg" alt="">
+                            <img src="{% static 'images/elderly1.jpg' %}" alt="">
                         </div>
                         <!-- Service Image End -->
 
@@ -325,20 +328,20 @@
                         <div class="service-body">
                             <!-- Icon Box Start -->
                             <div class="icon-box">
-                                <img src="images/icon-service-2.svg" alt="">  
+                                <img src="{% static 'images/icon-service-2.svg' %}" alt="">  
                             </div>
                             <!-- Icon Box End -->
                             
                             <!-- Service Content Start -->
                             <div class="service-content">
-                                <h3><a href="service-single.html">Companionship & Social Engagement</a></h3>
+                                <h3><a href="#">Companionship & Social Engagement</a></h3>
                                 <p>Friendly conversation, emotional support, and engaging activities to combat loneliness. We monitor emotional well-being and encourage mental stimulation through shared hobbies and social connection.</p>
                             </div>
                             <!-- Service Content End -->
                             
                             <!-- Service Readmore Button Start -->
                             <div class="service-readmore-btn">
-                                <a href="service-single.html" class="readmore-btn">Learn more</a>
+                                <a href="#" class="readmore-btn">Learn more</a>
                             </div>
                             <!-- Service Readmore Button End -->
                         </div>
@@ -352,7 +355,7 @@
                     <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
                         <!-- Service Image Start -->
                         <div class="service-image">
-                            <img src="images/service-1.jpg" alt="">
+                            <img src="{% static 'images/elderly3.jpg' %}" alt="">
                         </div>
                         <!-- Service Image End -->
 
@@ -360,20 +363,20 @@
                         <div class="service-body">
                             <!-- Icon Box Start -->
                             <div class="icon-box">
-                                <img src="images/icon-service-3.svg" alt="">  
+                                <img src="{% static 'images/icon-service-3.svg' %}" alt="">  
                             </div>
                             <!-- Icon Box End -->
                             
                             <!-- Service Content Start -->
                             <div class="service-content">
-                                <h3><a href="service-single.html">Meal Preparation & Feeding Support</a></h3>
+                                <h3><a href="#">Meal Preparation & Feeding Support</a></h3>
                                 <p>Menu planning and meal preparation based on dietary needs. We ensure proper nutrition, monitor food intake, and provide assistance with feeding when needed, always prioritizing safety and cleanliness.</p>
                             </div>
                             <!-- Service Content End -->
                             
                             <!-- Service Readmore Button Start -->
                             <div class="service-readmore-btn">
-                                <a href="service-single.html" class="readmore-btn">Learn more</a>
+                                <a href="#" class="readmore-btn">Learn more</a>
                             </div>
                             <!-- Service Readmore Button End -->
                         </div>
@@ -387,7 +390,7 @@
                     <div class="service-item wow fadeInUp" data-wow-delay="0.6s">
                         <!-- Service Image Start -->
                         <div class="service-image">
-                            <img src="images/service-1.jpg" alt="">
+                            <img src="{% static 'images/elderly1.jpg' %}" alt="">
                         </div>
                         <!-- Service Image End -->
 
@@ -395,20 +398,20 @@
                         <div class="service-body">
                             <!-- Icon Box Start -->
                             <div class="icon-box">
-                                <img src="images/icon-service-4.svg" alt="">  
+                                <img src="{% static 'images/icon-service-4.svg' %}" alt="">  
                             </div>
                             <!-- Icon Box End -->
                             
                             <!-- Service Content Start -->
                             <div class="service-content">
-                                <h3><a href="service-single.html">Light Housekeeping</a></h3>
+                                <h3><a href="#">Light Housekeeping</a></h3>
                                 <p>Maintaining a clean, safe home environment with kitchen/bathroom sanitation, laundry, bed making, and general tidying. We help create a comfortable living space that promotes well-being.</p>
                             </div>
                             <!-- Service Content End -->
                             
                             <!-- Service Readmore Button Start -->
                             <div class="service-readmore-btn">
-                                <a href="service-single.html" class="readmore-btn">Learn more</a>
+                                <a href="#" class="readmore-btn">Learn more</a>
                             </div>
                             <!-- Service Readmore Button End -->
                         </div>
@@ -422,7 +425,7 @@
                     <div class="service-item wow fadeInUp" data-wow-delay="0.8s">
                         <!-- Service Image Start -->
                         <div class="service-image">
-                            <img src="images/service-1.jpg" alt="">
+                            <img src="{% static 'images/elderly7.jpg' %}" alt="">
                         </div>
                         <!-- Service Image End -->
 
@@ -430,20 +433,20 @@
                         <div class="service-body">
                             <!-- Icon Box Start -->
                             <div class="icon-box">
-                                <img src="images/icon-service-5.svg" alt="">  
+                                <img src="{% static 'images/icon-service-5.svg' %}" alt="">  
                             </div>
                             <!-- Icon Box End -->
                             
                             <!-- Service Content Start -->
                             <div class="service-content">
-                                <h3><a href="service-single.html">Transportation & Errands</a></h3>
+                                <h3><a href="#">Transportation & Errands</a></h3>
                                 <p>Accompanying clients to appointments, grocery shopping, and essential errands. Our pre-approved, insured drivers help maintain independence and connection with the community.</p>
                             </div>
                             <!-- Service Content End -->
                             
                             <!-- Service Readmore Button Start -->
                             <div class="service-readmore-btn">
-                                <a href="service-single.html" class="readmore-btn">Learn more</a>
+                                <a href="#" class="readmore-btn">Learn more</a>
                             </div>
                             <!-- Service Readmore Button End -->
                         </div>
@@ -458,7 +461,7 @@
                         <!-- Service CTA Image Start -->
                         <div class="service-cta-image">
                             <figure>
-                                <img src="images/service-cta-image.jpg" alt="">
+                                <img src="{% static 'images/elderly3.jpg' %}" alt="">
                             </figure>
                         </div>
                         <!-- Service CTA Image End -->
@@ -466,7 +469,7 @@
                         <!-- Service CTA Content Start -->
                         <div class="service-cta-content">
                             <h3>Ready to start your journey to recovery</h3>
-                            <a href="book-appointment.html" class="btn-default btn-highlighted">Book appointment</a>
+                            <a href="#" class="btn-default btn-highlighted">Book appointment</a>
                         </div>
                         <!-- Service CTA Content End -->
                     </div>
@@ -477,7 +480,7 @@
                 <div class="col-lg-12">
                     <!-- Section Footer Text Start-->
                     <div class="section-footer-text wow fadeInUp" data-wow-delay="1.2s">
-                        <p><span>Free</span>Discover the care you deserve - <a href="book-appointment.html">book your free visit today!</a></p>
+                        <p><span>Free</span>Discover the care you deserve - <a href="#">book your free visit today!</a></p>
                     </div>
                     <!-- Section Footer Text End-->
                 </div>
@@ -540,7 +543,7 @@
                         </figure>
                         
                         <div class="contact-us-circle">
-                            <a href="contact.html">
+                            <a href="#">
                                 <img src="images/contact-us-circle.svg" alt="">
                             </a>
                         </div>
@@ -657,7 +660,7 @@
                 <div class="col-lg-12">
                     <!-- Section Footer Text Start-->
                     <div class="section-footer-text wow fadeInUp" data-wow-delay="0.8s">
-                        <p>Compassionate care to enhance daily living. <a href="contact.html">Contact us today!</a></p>
+                        <p>Compassionate care to enhance daily living. <a href="#">Contact us today!</a></p>
                     </div>
                     <!-- Section Footer Text End-->
                 </div>
@@ -755,7 +758,7 @@
                     </div>
                     
                     <div class="cta-box-btn wow fadeInUp" data-wow-delay="0.2s">
-                        <a href="book-appointment.html" class="btn-default">Book appointment</a>
+                        <a href="#" class="btn-default">Book appointment</a>
                     </div>
                 </div>
             </div>
@@ -811,7 +814,7 @@
                     </div>
 
                     <div class="pricing-btn">
-                        <a href="contact.html" class="btn-default">get started</a>
+                        <a href="#" class="btn-default">get started</a>
                     </div>
                 </div>
             </div>
@@ -837,7 +840,7 @@
                     </div>
 
                     <div class="pricing-btn">
-                        <a href="contact.html" class="btn-default btn-highlighted">get started</a>
+                        <a href="#" class="btn-default btn-highlighted">get started</a>
                     </div>
                 </div>
             </div>
@@ -863,7 +866,7 @@
                     </div>
 
                     <div class="pricing-btn">
-                        <a href="contact.html" class="btn-default">get started</a>
+                        <a href="#" class="btn-default">get started</a>
                     </div>
                 </div>
             </div>
@@ -1393,7 +1396,7 @@
                     <div class="about-footer">
                         <!-- Footer Logo Start -->
                         <div class="footer-logo">
-                            <img src="images/logo.png" alt="">
+                            <img src="{% static 'images/logo.png' %}" alt="">
                         </div>
                         <!-- Footer Logo End -->
 
@@ -1442,10 +1445,10 @@
                     <div class="footer-links">
                         <h3>Quick Links</h3>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="services.html">services</a></li>
-                            <!-- <li><a href="contact.html">contact us</a></li> -->
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'about' %}">About us</a></li>
+                            <li><a href="{% url 'services' %}">services</a></li>
+                            <!-- <li><a href="#">contact us</a></li> -->
                         </ul>
                     </div>
                     <!-- Footer Links End -->
@@ -1497,35 +1500,35 @@
     <!-- Footer End -->
 
     <!-- Jquery Library File -->
-    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
     <!-- Bootstrap js file -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
     <!-- Validator js file -->
-    <script src="js/validator.min.js"></script>
+    <script src="{% static 'js/validator.min.js' %}"></script>
     <!-- SlickNav js file -->
-    <script src="js/jquery.slicknav.js"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
     <!-- Swiper js file -->
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
     <!-- Counter js file -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
     <!-- Magnific js file -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
     <!-- SmoothScroll -->
-    <script src="js/SmoothScroll.js"></script>
+    <script src="{% static 'js/SmoothScroll.js' %}"></script>
     <!-- Parallax js -->
-    <script src="js/parallaxie.js"></script>
+    <script src="{% static 'js/parallaxie.js' %}"></script>
     <!-- MagicCursor js file -->
-    <script src="js/gsap.min.js"></script>
-    <script src="js/magiccursor.js"></script>
+    <script src="{% static 'js/gsap.min.js' %}"></script>
+    <script src="{% static 'js/magiccursor.js' %}"></script>
     <!-- Text Effect js file -->
-    <script src="js/SplitText.js"></script>
-    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="{% static 'js/SplitText.js' %}"></script>
+    <script src="{% static 'js/ScrollTrigger.min.js' %}"></script>
     <!-- YTPlayer js File -->
-    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="{% static 'js/jquery.mb.YTPlayer.min.js' %}"></script>
     <!-- Wow js file -->
-    <script src="js/wow.min.js"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
     <!-- Main Custom js file -->
-    <script src="js/function.js"></script>
+    <script src="{% static 'js/function.js' %}"></script>
 </body>
 </html>
