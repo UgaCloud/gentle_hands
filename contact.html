@@ -1,48 +1,86 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="Awaiken">
-	<!-- Page Title -->
-    <title>Carely - Senior Care & Elderly Nursing HTML Template</title>
-	<!-- Favicon Icon -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-	<!-- Google Fonts Css-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Awaiken">
+    <!-- Page Title -->
+    <title>Gentle Hands Home Care | Compassionate In-Home Senior Care Services</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-	<!-- Bootstrap Css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<!-- SlickNav Css -->
-	<link href="css/slicknav.min.css" rel="stylesheet">
-	<!-- Swiper Css -->
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<!-- Font Awesome Icon Css-->
-	<link href="css/all.min.css" rel="stylesheet" media="screen">
-	<!-- Animated Css -->
-	<link href="css/animate.css" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="css/slicknav.min.css" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Font Awesome Icon Css-->
+    <link href="css/all.min.css" rel="stylesheet" media="screen">
+    <!-- Animated Css -->
+    <link href="css/animate.css" rel="stylesheet">
     <!-- Magnific Popup Core Css File -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Mouse Cursor Css File -->
-	<link rel="stylesheet" href="css/mousecursor.css">
-	<!-- Main Custom Css -->
-	<link href="css/custom.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="css/mousecursor.css">
+    <!-- Main Custom Css -->
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Additional styles for EmailJS integration */
+        .form-success {
+            color: #28a745;
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: none;
+        }
+        
+        .form-error {
+            color: #721c24;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: none;
+        }
+        
+        .loading-spinner {
+            display: none;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        .loading-spinner img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
 </head>
 <body>
 
     <!-- Preloader Start -->
-	<div class="preloader">
-		<div class="loading-container">
-			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
-		</div>
-	</div>
-	<!-- Preloader End -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="images/logo.png" alt=""></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
 
     <!-- Header Start -->
 	<header class="main-header bg-section">
@@ -50,8 +88,8 @@
 			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid">
 					<!-- Logo Start -->
-					<a class="navbar-brand" href="./">
-						<img src="images/logo.svg" alt="Logo">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo.png" alt="Logo" style="width: 80px; height: 80px;">
 					</a>
 					<!-- Logo End -->
 
@@ -59,17 +97,18 @@
 					<div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item submenu"><a class="nav-link" href="./">Home</a>
-                                    <ul>
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a>
+                                    <!-- <ul>
                                         <li class="nav-item"><a class="nav-link" href="index.html">Home - Main</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-image.html">Home - Image</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="index.html">Home - Image</a></li>
                                         <li class="nav-item"><a class="nav-link" href="index-video.html">Home - Video</a></li>
-                                    </ul>
+                                    </ul> -->
+                                    
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="about.html">About Us</a>
                                 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
+                                <!-- <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> -->
+                                <!-- <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" href="service-single.html">Service Details</a></li>
                                         <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
@@ -84,16 +123,16 @@
                                         <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
                                         <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                                <li class="nav-item highlighted-menu"><a class="nav-link" href="book-appointment.html">book appointment</a></li>
+                                <li class="nav-item highlighted-menu"><a class="nav-link" href="#">book appointment</a></li>
                             </ul>
                         </div>
                         
                         <!-- Header Btn Start -->
-                        <div class="header-btn">
-                            <a href="book-appointment.html" class="btn-default">book appointment</a>
-                        </div>
+                        <!-- <div class="header-btn">
+                            <a href="#" class="btn-default">book appointment</a>
+                        </div> -->
                         <!-- Header Btn End -->
 					</div>
 					<!-- Main Menu End -->
@@ -104,6 +143,7 @@
 		</div>
 	</header>
 	<!-- Header End -->
+
 
     <!-- Page Header Start -->
     <div class="page-header bg-section">
@@ -158,9 +198,12 @@
                             <!-- Opening Hours Body Start -->
                             <div class="opening-hours-body">
                                 <ul>
+                                    <li>Open 24/7 </li>
+                                </ul>
+                                <!-- <ul>
                                     <li>Monday - Friday <span>8:00 AM - 8:00 PM</span></li>
                                     <li>Saturday - Sunday <span>Closed</span></li>
-                                </ul>
+                                </ul> -->
                             </div>
                             <!-- Opening Hours Body End -->
                         </div>
@@ -172,35 +215,48 @@
                 <div class="col-lg-7">
                     <!-- Book Contact Form Start -->
                     <div class="contact-form wow fadeInUp" data-wow-delay="0.2s">
-                        <form id="contactForm" action="#" method="POST" data-toggle="validator">
+                        <!-- Success and Error Messages -->
+                        <div id="form-success" class="form-success">
+                            Thank you for your message! We'll get back to you soon.
+                        </div>
+                        <div id="form-error" class="form-error">
+                            Sorry, there was an error sending your message. Please try again later.
+                        </div>
+                        
+                        <!-- Loading Spinner -->
+                        <div id="loading-spinner" class="loading-spinner">
+                            <img src="images/logo.png" alt="Loading...">
+                        </div>
+                        
+                        <form id="contact-form" method="POST">
                             <div class="row">                                
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name" required>
+                                    <input type="text" name="first_name" class="form-control" id="first_name" placeholder="First Name" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name" required>
+                                    <input type="text" name="last_name" class="form-control" id="last_name" placeholder="Last Name" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone No." required>
+                                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Phone No." required>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="email" name ="email" class="form-control" id="email" placeholder="E-mail" required>
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="E-mail" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 
                                 <div class="form-group col-md-12 mb-5">
-                                    <textarea name="message" class="form-control" id="message" rows="4" placeholder="Write Message..."></textarea>
+                                    <textarea name="message" class="form-control" id="message" rows="4" placeholder="Write Message..." required></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
             
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn-default"><span>Submit Message</span></button>
+                                    <button type="submit" class="btn-default" id="submit-btn"><span>Submit Message</span></button>
                                     <div id="msgSubmit" class="h3 hidden"></div>
                                 </div>
                             </div>
@@ -220,7 +276,7 @@
                 <div class="col-lg-6 order-lg-1 order-2">
                     <!-- Google Map IFrame Start -->
                     <div class="google-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d188791.06181475247!2d-88.61763835700113!3d42.324177454958374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f3e7c94047ec7%3A0x6a1f34e2329a2004!2sMcHenry%20County%2C%20IL%2C%20USA!5e0!3m2!1sen!2sug!4v1770802586714!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <!-- Google Map IFrame End -->
                 </div>
@@ -248,7 +304,7 @@
                                 <!-- Contact Item Content Start -->
                                 <div class="contact-item-content">
                                     <h3>Address</h3>
-                                    <p>123 Maplewood Drive, Pinehill, CA 90210</p>
+                                    <p>Mchenry County Illions,USA</p>
                                 </div>
                                 <!-- Contact Item Content End -->
                             </div>
@@ -265,8 +321,7 @@
                                 <!-- Contact Item Content Start -->
                                 <div class="contact-item-content">
                                     <h3>Email</h3>
-                                    <p><a href="mailto:info@domainname.com">info@domainname.com</a></p>
-                                    <p><a href="mailto:support@domain.com">support@domain.com</a></p>
+                                    <p><a href="mailto:gentlehandshomecareltd@gmail.com">gentlehandshomecareltd@gmail.com</a></p>
                                 </div>
                                 <!-- Contact Item Content End -->
                             </div>
@@ -283,8 +338,8 @@
                                 <!-- Contact Item Content Start -->
                                 <div class="contact-item-content">
                                     <h3>Phone</h3>
-                                    <p><a href="tel:+00-123-258-963">+00-123-258-963</a></p>
-                                    <p><a href="tel:+00-856-796-761">+00-856-796-761</a></p>
+                                    <p><a href="tel:815 482 2111">815 482 2220</a></p>
+                                    <p><a href="tel:815 482 2111">815 482 2111</a></p>
                                 </div>
                                 <!-- Contact Item Content End -->
                             </div>
@@ -308,13 +363,13 @@
                     <div class="about-footer">
                         <!-- Footer Logo Start -->
                         <div class="footer-logo">
-                            <img src="images/footer-logo.svg" alt="">
+                            <img src="images/logo.png" alt="">
                         </div>
                         <!-- Footer Logo End -->
 
                         <!-- About Footer Content Start -->
                         <div class="about-footer-content">
-                            <p>Providing compassionate, professional,  reliable home nursing care tailored to your needs.</p>
+                            <p>Compassion You Can Count On.</p>
                         </div>           
                         <!-- About Footer Content End -->
 
@@ -338,14 +393,14 @@
                         <!-- Footer Contact Item Start -->
                         <div class="footer-contact-item">
                             <h3>Contact Information</h3>
-                            <p>123 Maplewood Drive, Pinehill, CA 90210</p>
+                            <p>815 482 2220 | 815 482 2111</p>
                         </div>
                         <!-- Footer Contact Item End -->
 
                         <!-- Footer Contact Item Start -->
                         <div class="footer-contact-item">
                             <h3>Email Address</h3>
-                            <p><a href="mailto:info@domainname.com">info@domainname.com</a></p>
+                            <p><a href="mailto:gentlehandshomecareltd@gmail.com">gentlehandshomecareltd@gmail.com</a></p>
                         </div>
                         <!-- Footer Contact Item End -->
                     </div>
@@ -367,11 +422,11 @@
                 </div>
 
                 <div class="col-lg-3">
-                    <!-- Footer Newsletter Box Start -->
-                    <div class="footer-newsletter-box footer-links">
+                    <!-- Footer Newsletter Box Start 
+                    <!-- <div class="footer-newsletter-box footer-links">
                         <h3>Newsletter Subscription</h3>
                         <p>Stay Updated With Health Tips & Services</p>
-                        <!-- Footer Newsletter Form Start -->
+                        <!-- Footer Newsletter Form Start 
                         <div class="footer-newsletter-form">
                             <form id="newslettersForm" action="#" method="POST">
                                 <div class="form-group">
@@ -380,8 +435,8 @@
                                 </div>
                             </form>
                         </div>
-                        <!-- Footer Newsletter Box End -->
-                    </div>
+                        <!-- Footer Newsletter Box End 
+                    </div> -->
                     <!-- Footer Links End -->                        
                 </div>
 
@@ -390,17 +445,18 @@
                     <div class="footer-copyright">
                         <!-- Footer Copyright Text Start -->
                         <div class="footer-copyright-text">
-                            <p>Copyright © 2025 All Rights Reserved.</p>
+                            <p> Gentle hands home care services Copyright © 2026 All Rights Reserved.</p>
+                            <small>powered by ugacloud services</small>
                         </div>
                         <!-- Footer Copyright Text End -->
 
                         <!-- Footer Privacy Policy Start -->
-                        <div class="footer-privacy-policy">
+                        <!-- <div class="footer-privacy-policy">
                             <ul>
                                 <li><a href="#">privacy policy</a></li>
                                 <li><a href="#">terms & condition</a></li>
                             </ul>
-                        </div>
+                        </div> -->
                         <!-- Footer Privacy Policy End -->
                     </div>
                     <!-- Footer Copyright End -->
@@ -439,7 +495,105 @@
     <script src="js/jquery.mb.YTPlayer.min.js"></script>
     <!-- Wow js file -->
     <script src="js/wow.min.js"></script>
+    
+    <!-- EmailJS Integration -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+    
+    <script>
+        // Initialize EmailJS with your Public Key
+        (function() {
+            // Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
+            emailjs.init('dQnFqOl2c0DzAqGZC');
+        })();
+        
+        // Form submission handler
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Show loading spinner
+            document.getElementById('loading-spinner').style.display = 'block';
+            document.getElementById('submit-btn').disabled = true;
+            
+            // Hide previous messages
+            document.getElementById('form-success').style.display = 'none';
+            document.getElementById('form-error').style.display = 'none';
+            
+            // Prepare template parameters
+            const templateParams = {
+                first_name: document.getElementById('first_name').value,
+                last_name: document.getElementById('last_name').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value,
+                to_email: 'gentlehandshomecareltd@gmail.com', // Your receiving email
+                date: new Date().toLocaleString()
+            };
+            
+            // Send email using EmailJS
+            emailjs.send(
+                'service_520ilr3',      // Replace with your EmailJS Service ID
+                'template_29tmim2',     // Replace with your EmailJS Template ID
+                templateParams
+            )
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                
+                // Show success message
+                document.getElementById('form-success').style.display = 'block';
+                document.getElementById('loading-spinner').style.display = 'none';
+                
+                // Reset form
+                document.getElementById('contact-form').reset();
+                document.getElementById('submit-btn').disabled = false;
+                
+                // Scroll to success message
+                document.getElementById('form-success').scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center' 
+                });
+            })
+            .catch(function(error) {
+                console.log('FAILED...', error);
+                
+                // Show error message
+                document.getElementById('form-error').style.display = 'block';
+                document.getElementById('loading-spinner').style.display = 'none';
+                document.getElementById('submit-btn').disabled = false;
+                
+                // Scroll to error message
+                document.getElementById('form-error').scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center' 
+                });
+            });
+        });
+        
+        // Basic form validation
+        function validateForm() {
+            const firstName = document.getElementById('first_name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (firstName.trim() === '' || email.trim() === '' || message.trim() === '') {
+                alert('Please fill in all required fields.');
+                return false;
+            }
+            
+            if (!validateEmail(email)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+            
+            return true;
+        }
+        
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+    </script>
 </body>
 </html>

@@ -5144,7 +5144,7 @@ header.main-header .header-sticky.active{
 .contact-info-list{
 	display: flex;
 	flex-wrap: wrap;
-	gap: 30px;
+	gap: 50px;
 }
 
 .contact-info-item{
