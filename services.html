@@ -420,11 +420,165 @@
 
 
 
+        
+                  
+
                 <div class="col-lg-12">
                     <!-- Section Footer Text Start-->
-                    <!-- <div class="section-footer-text wow fadeInUp" data-wow-delay="1.2s">
-                        <p><span>Free</span>Discover the care you deserve - <a href="#">book your free visit today!</a></p>
-                    </div> -->
+                    <div class="section-footer-text wow fadeInUp" data-wow-delay="1.2s">
+                        <p><span>❤️ Your Care Matters</span>Share your gift of compassion - 
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#caregiverModal">apply as a caregiver now</a>
+                        </p>
+                    </div>
+                    <!-- Section Footer Text End-->
+                </div>
+
+                <!-- Caregiver Application Modal -->
+                <div class="modal fade" id="caregiverModal" tabindex="-1" aria-labelledby="caregiverModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background: #E2A76F;">
+                                <h5 class="modal-title" id="caregiverModalLabel" style="color: white;">
+                                    <i class="fas fa-hands-helping me-2"></i> Gentle Hands Home Care - Caregiver Application
+                                </h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="text-center mb-4">
+                                   <img src="images/logo.png" style="width: 80px; height: 80px;" alt="">
+                                    <h6 class="mt-2 text-muted">Join our compassionate team caring for the elderly</h6>
+                                </div>
+                                
+                                <form id="caregiverApplicationForm">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label">Full Name *</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                <input type="text" class="form-control" placeholder="Enter your full name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label">Email Address *</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                                <input type="email" class="form-control" placeholder="you@example.com" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label">Phone Number *</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                                <input type="tel" class="form-control" placeholder="(555) 123-4567" required>
+                                            </div>
+                                        </div>
+                                     
+                                    
+                                    </div>
+                                    
+                                   
+                                    <div class="mb-3">
+                                        <label class="form-label">Address</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
+                                            <input type="text" class="form-control" placeholder="Street address">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label class="form-label">Why do you want to work with Gentle Hands Home Care?</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-heart"></i></span>
+                                            <textarea class="form-control" rows="3" placeholder="Share your passion for caring for the elderly..."></textarea>
+                                        </div>
+                                    </div>
+                                 
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" form="caregiverApplicationForm" class="btn" style="background: #E2A76F; color: white;">
+                                    <i class="fas fa-paper-plane me-2"></i>Submit Application
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .modal-content {
+                        border-radius: 15px;
+                        border: none;
+                        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                    }
+                    
+                    .modal-header {
+                        border-radius: 15px 15px 0 0;
+                        padding: 1.5rem;
+                    }
+                    
+                    .modal-footer {
+                        border-top: 1px solid rgba(0,0,0,0.1);
+                        padding: 1.5rem;
+                    }
+                    
+                    .form-control, .form-select {
+                        border: 1px solid #e0e0e0;
+                        padding: 0.75rem;
+                        border-radius: 10px;
+                    }
+                    
+                    .form-control:focus, .form-select:focus {
+                        border-color: #E2A76F;
+                        box-shadow: 0 0 0 0.2rem rgba(79, 172, 254, 0.25);
+                    }
+                    
+                    .input-group-text {
+                        background: #f8f9fa;
+                        border: 1px solid #e0e0e0;
+                        border-radius: 10px 0 0 10px;
+                        color: #E2A76F;
+                    }
+                    
+                    .btn {
+                        border-radius: 10px;
+                        padding: 0.75rem 1.5rem;
+                        font-weight: 600;
+                        transition: all 0.3s ease;
+                    }
+                    
+                    .btn:hover {
+                        transform: translateY(-2px);
+                        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+                    }
+                    
+                    .section-footer-text a {
+                        color: #E2A76F;
+                        text-decoration: none;
+                        font-weight: 600;
+                        transition: color 0.3s ease;
+                    }
+                    
+                    .section-footer-text a:hover {
+                        color: #E2A76F;
+                    }
+                    
+                    .section-footer-text p {
+                        font-size: 1.1rem;
+                    }
+                    
+                    .section-footer-text span {
+                        background: #E2A76F;
+                        color: white;
+                        padding: 0.25rem 0.75rem;
+                        border-radius: 25px;
+                        margin-right: 0.5rem;
+                        font-weight: 600;
+                    }
+                </style>
                     <!-- Section Footer Text End-->
                 </div>
             </div>
